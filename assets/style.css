@@ -32,7 +32,9 @@ nav {
 .nav a {
     list-style: none;
     text-decoration: none;
+    color: black;
 }
+
 
 .H1 {
     position: absolute;
@@ -57,7 +59,7 @@ nav {
 }
 
 #contacButton {
-    top: 64.5%;
+    top: 65%;
     left: 58%;
     background-color: white;
     align-self: center;
@@ -74,7 +76,8 @@ nav {
     height: 580px;
     width: 100%;
     object-fit: cover;
-    opacity: 0.95;
+    opacity: 0.9;
+    object-fit: cover;
 }
 
 .presentation {
@@ -99,7 +102,7 @@ nav {
 }
 
 .title_competences {
-    background-image: url('../images/bannière_codage2.jpg');
+    background-image: url('../images/bannière_codage3.jpg');
     height: 150px;
     position: relative;
     background-size: cover;
@@ -147,7 +150,6 @@ nav {
     width: 80%;
     height: 450px;
     margin: auto;
-    background-color: aqua;
 }
 
 .article_image:hover {
@@ -163,15 +165,16 @@ nav {
 #image_project2 {
     height: 450px;
     width: 100%;
-    object-fit: cover
+    object-fit: contain;
 }
 
 .description_project {
     padding: 14px;
     justify-content: center;
+    word-wrap: break-word;
 }
 
-.div-project{
+.div-project {
     width: 50%;
 }
 
@@ -211,18 +214,59 @@ nav {
 
 @media (max-width: 1024px) {
 
+    .H1 {
+        top: 48%;
+        right: 20%;
+        padding-left: 60px;
+    }
+
+    #cvButton,
+    #contacButton {
+        height: 40px;
+        width: 120px;
+        font-size: 12px;
+    }
+
 }
 
 
 @media (max-width: 767.98px) {
 
-    nav{
+    nav {
         justify-content: center;
     }
 
-    li{
+    li {
         font-size: 12px;
     }
+
+    .H1 {
+        top: 38%;
+        right: 15%;
+    }
+
+    #cvButton {
+        left: 38%;
+        top: 65%;
+    }
+
+    #contacButton {
+        left: 38%;
+        top: 75%;
+    }
+
+    #cvButton,
+    #contacButton {
+        width: 160px;
+    }
+
+    .title_competences h2,
+    #project h2 {
+        left: 20%;
+    }
+
+
+
 
     .competences {
         flex-direction: column;
@@ -243,7 +287,7 @@ nav {
         height: 160px;
     }
 
-    .div-project{
+    .div-project {
         width: 100%;
     }
 

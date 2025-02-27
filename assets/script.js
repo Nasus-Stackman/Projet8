@@ -13,10 +13,12 @@ window.addEventListener('scroll', function() {
     imageContainer2.style.backgroundPosition = 'center ' + (-yOffset) + 'px'; 
 });
 
-const cvLink = './images/Rapport_d’intervention.pdf'; // Remplacez 'monCV.pdf' par le chemin vers votre fichier PDF
+const cvLink = './images/Mon_CV.pdf'; // Remplacez 'monCV.pdf' par le chemin vers votre fichier PDF
 
         // Lorsque l'utilisateur clique sur le bouton
         document.getElementById('cvButton').addEventListener('click', function() {
             // Ouvre le PDF dans une nouvelle fenêtre ou un nouvel onglet
             window.open(cvLink, '_blank');
         });
+
+
